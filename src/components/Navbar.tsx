@@ -22,7 +22,7 @@ const Navbar = () => {
             <span>ChatPDF.</span>
           </Link>
 
-          {/* <MobileNav isAuth={!!user} /> */}
+          <MobileNav isAuth={!!user} />
 
           <div className="hidden items-center space-x-4 sm:flex">
             {!user ? (
@@ -64,7 +64,7 @@ const Navbar = () => {
                   Dashboard
                 </Link>
 
-                {/* <UserAccountNav
+                <UserAccountNav
                   name={
                     !user.given_name || !user.family_name
                       ? "Your Account"
@@ -72,7 +72,7 @@ const Navbar = () => {
                   }
                   email={user.email ?? ""}
                   imageUrl={user.picture ?? ""}
-                /> */}
+                />
               </>
             )}
           </div>
